@@ -130,7 +130,7 @@
       position: absolute; inset: 0;
       background:
         linear-gradient(160deg, rgba(44,34,24,.6) 0%, rgba(44,34,24,.35) 50%, rgba(44,34,24,.65) 100%),
-        url('imgs/sabores/IMG_0112.jpg') center/cover no-repeat;
+        url('../Copia%20de%20SABORES%20DEL%20ALMA%20PATZ/IMG_0112.jpg') center/cover no-repeat;
     }
     .hero__content {
       position: relative; z-index: 1;
@@ -551,7 +551,40 @@
       .persona-tab { min-width: calc(50% - .6rem); padding: 1rem .75rem; font-size: .78rem; flex: 1 1 calc(50% - .6rem); }
       .persona-tab .tab-label { font-size: .72rem; }
       .hero__ctas { flex-direction: column; align-items: center; }
-      .hero__ctas .btn { width: 100%; max-width: 260px; text-align: center; }
+      .hero__ctas .btn {
+        display: flex;
+        width: 100%;
+        max-width: 260px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .persona-panel__content { padding: 0 1.25rem; }
+      .persona-panel .btn-primary {
+        display: block;
+        width: fit-content;
+        margin: 1.5rem auto 0;
+        text-align: center;
+      }
+      .location-grid > div > .btn-outline,
+      .map-embed__link,
+      #restaurante .menu-panel .btn-primary,
+      .package-special-cta .btn-primary,
+      .booking-whatsapp-cta .btn-primary {
+        display: block;
+        width: fit-content;
+        margin: 1.5rem auto 0;
+        text-align: center;
+      }
+      .location-grid > div,
+      .package-special-cta,
+      .booking-whatsapp-cta { text-align: center; }
+      .map-embed__link {
+        left: 50%;
+        right: auto !important;
+        transform: translateX(-50%);
+        bottom: 1rem;
+      }
       .footer__grid { grid-template-columns: 1fr; }
       .sticky-bar { display: flex; }
       .hero__booking { display: none; }
@@ -823,7 +856,7 @@
   <!-- Panel 0: Cultural -->
   <div class="persona-panel active" id="persona-0">
     <div class="persona-panel__img">
-      <img src="imgs/sabores/IMG_0001.jpg" alt="Patio colonial Hotel La Parroquia" loading="lazy" />
+      <img src="../Copia%20de%20SABORES%20DEL%20ALMA%20PATZ/IMG_0001.jpg" alt="Patio colonial Hotel La Parroquia" loading="lazy" />
       <div class="persona-panel__badge">Turista Cultural</div>
     </div>
     <div class="persona-panel__content">
@@ -849,7 +882,7 @@
   <!-- Panel 1: Romántico -->
   <div class="persona-panel" id="persona-1">
     <div class="persona-panel__img">
-      <img src="imgs/sabores/IMG_9785.jpg" alt="Mesa romántica en el patio colonial" loading="lazy" />
+      <img src="../Copia%20de%20SABORES%20DEL%20ALMA%20PATZ/IMG_9785.jpg" alt="Mesa romántica en el patio colonial" loading="lazy" />
       <div class="persona-panel__badge">Pareja Romántica</div>
     </div>
     <div class="persona-panel__content">
@@ -875,7 +908,7 @@
   <!-- Panel 2: Negocios -->
   <div class="persona-panel" id="persona-2">
     <div class="persona-panel__img">
-      <img src="imgs/parroquia/IMG_7184.jpg" alt="Habitación con muebles coloniales para viajero de negocios" loading="lazy" />
+      <img src="../Copia%20de%20PARROQUIA%202/IMG_7184.jpg" alt="Habitación con muebles coloniales para viajero de negocios" loading="lazy" />
       <div class="persona-panel__badge">Viajero de Negocios</div>
     </div>
     <div class="persona-panel__content">
@@ -901,7 +934,7 @@
   <!-- Panel 3: Familia -->
   <div class="persona-panel" id="persona-3">
     <div class="persona-panel__img">
-      <img src="imgs/parroquia/IMG_7097.jpg" alt="Habitación familiar Hotel La Parroquia" loading="lazy" />
+      <img src="../Copia%20de%20PARROQUIA%202/IMG_7097.jpg" alt="Habitación familiar Hotel La Parroquia" loading="lazy" />
       <div class="persona-panel__badge">Familias</div>
     </div>
     <div class="persona-panel__content">
@@ -993,7 +1026,7 @@
             <div style="font-size:.65rem;font-weight:400;opacity:.85">Portal Hidalgo #4 · Centro Histórico</div>
           </div>
           <!-- Google Maps link -->
-          <a href="https://www.google.com/maps/search/Hotel+La+Parroquia+Patzcuaro+Michoacan" target="_blank" style="position:absolute;bottom:1rem;right:1rem;background:#fff;color:var(--brown);font-size:.75rem;font-weight:700;padding:.5rem 1rem;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;gap:.4rem;text-decoration:none;">
+          <a href="https://www.google.com/maps/search/Hotel+La+Parroquia+Patzcuaro+Michoacan" target="_blank" class="map-embed__link" style="position:absolute;bottom:1rem;right:1rem;background:#fff;color:var(--brown);font-size:.75rem;font-weight:700;padding:.5rem 1rem;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;gap:.4rem;text-decoration:none;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             Ver en Google Maps
           </a>
@@ -1016,7 +1049,7 @@
       <!-- Room 1 -->
       <div class="room-card">
         <div class="room-card__img">
-          <img src="imgs/parroquia/IMG_7056.jpg" alt="Habitación Doble Colonial" loading="lazy" />
+          <img src="../Copia%20de%20PARROQUIA%202/IMG_7056.jpg" alt="Habitación Doble Colonial" loading="lazy" />
           <div class="room-card__badge">Más popular</div>
         </div>
         <div class="room-card__body">
@@ -1042,7 +1075,7 @@
       <!-- Room 2 -->
       <div class="room-card">
         <div class="room-card__img">
-          <img src="imgs/parroquia/IMG_7131.jpg" alt="Habitación Familiar" loading="lazy" />
+          <img src="../Copia%20de%20PARROQUIA%202/IMG_7131.jpg" alt="Habitación Familiar" loading="lazy" />
         </div>
         <div class="room-card__body">
           <div class="room-card__stars">⭐⭐⭐⭐⭐</div>
@@ -1067,7 +1100,7 @@
       <!-- Room 3 -->
       <div class="room-card">
         <div class="room-card__img">
-          <img src="imgs/parroquia/IMG_7163.jpg" alt="Suite Colonial" loading="lazy" />
+          <img src="../Copia%20de%20PARROQUIA%202/IMG_7163.jpg" alt="Suite Colonial" loading="lazy" />
           <div class="room-card__badge" style="background:var(--brown)">Suite</div>
         </div>
         <div class="room-card__body">
@@ -1117,10 +1150,10 @@
       <!-- Desayuno -->
       <div class="menu-panel active" id="menu-0">
         <div class="menu-img" style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:6px;height:380px;border-radius:8px;overflow:hidden">
-          <img src="imgs/parroquia/IMG_7213.jpg" alt="Omelette desayuno talavera" loading="lazy" style="width:100%;height:100%;object-fit:cover"/>
-          <img src="imgs/parroquia/IMG_7250.jpg" alt="Frutas frescas en el patio" loading="lazy" style="width:100%;height:100%;object-fit:cover"/>
-          <img src="imgs/parroquia/IMG_7222.jpg" alt="Café de olla talavera" loading="lazy" style="width:100%;height:100%;object-fit:cover"/>
-          <img src="imgs/parroquia/IMG_7224.jpg" alt="Platillo carne guarnición talavera" loading="lazy" style="width:100%;height:100%;object-fit:cover"/>
+          <img src="../Copia%20de%20PARROQUIA%202/IMG_7213.jpg" alt="Omelette desayuno talavera" loading="lazy" style="width:100%;height:100%;object-fit:cover"/>
+          <img src="../Copia%20de%20PARROQUIA%202/IMG_7250.jpg" alt="Frutas frescas en el patio" loading="lazy" style="width:100%;height:100%;object-fit:cover"/>
+          <img src="../Copia%20de%20PARROQUIA%202/IMG_7222.jpg" alt="Café de olla talavera" loading="lazy" style="width:100%;height:100%;object-fit:cover"/>
+          <img src="../Copia%20de%20PARROQUIA%202/IMG_7224.jpg" alt="Platillo carne guarnición talavera" loading="lazy" style="width:100%;height:100%;object-fit:cover"/>
         </div>
         <div>
           <div class="menu-hours">🕖 7:00 am – 11:00 am · Todos los días</div>
@@ -1581,7 +1614,7 @@
           <div style="font-size:.75rem;color:var(--brown);font-weight:600;margin-top:.75rem">Desde $150 USD/noche</div>
         </div>
       </div>
-      <div style="text-align:center;margin-top:1.5rem">
+      <div class="package-special-cta" style="text-align:center;margin-top:1.5rem">
         <a href="#reservar" class="btn btn-primary btn-lg">Verificar disponibilidad para mi fecha</a>
       </div>
     </div>
@@ -1603,7 +1636,7 @@
           <li style="display:flex;gap:.75rem;align-items:center"><span style="color:var(--green);font-weight:700;font-size:1.1rem">✓</span><span>Opciones de pago flexibles</span></li>
           <li style="display:flex;gap:.75rem;align-items:center"><span style="color:var(--green);font-weight:700;font-size:1.1rem">✓</span><span>Cortesía de bienvenida en habitación</span></li>
         </ul>
-        <div style="margin-top:2rem;padding:1.5rem;background:var(--cream);border-radius:8px">
+        <div class="booking-whatsapp-cta" style="margin-top:2rem;padding:1.5rem;background:var(--cream);border-radius:8px">
           <p style="font-size:.875rem;font-weight:600;color:var(--brown);margin-bottom:.75rem">¿Prefieres reservar por WhatsApp?</p>
           <a href="https://wa.me/524412000000?text=Hola%2C+quisiera+hacer+una+reservaci%C3%B3n+en+Hotel+La+Parroquia" class="btn btn-primary">💬 Enviar mensaje a WhatsApp</a>
         </div>
@@ -1921,8 +1954,8 @@
   document.getElementById('checkout').value = toISO(dayAfter);
 
   // ======================== GALLERY ========================
-  const BASE_P = 'imgs/parroquia/';
-  const BASE_S = 'imgs/sabores/';
+  const BASE_P = '../Copia%20de%20PARROQUIA%202/';
+  const BASE_S = '../Copia%20de%20SABORES%20DEL%20ALMA%20PATZ/';
 
   const photos = [
     // ---- HOTEL / PATIO ----
